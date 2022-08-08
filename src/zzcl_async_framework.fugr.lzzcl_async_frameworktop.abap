@@ -1,0 +1,3 @@
+FUNCTION-POOL ZZCL_ASYNC_FRAMEWORK.         "MESSAGE-ID ..
+
+* INCLUDE LZZCL_ASYNC_FRAMEWORKD...          " Local class definition

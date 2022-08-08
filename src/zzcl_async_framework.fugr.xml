@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Asyncronous RFCs for Framework</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZZCL_ASYNC_FRAMEWORKTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZZCL_ASYNC_FRAMEWORK</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZZCL_ASYNC_GENERAL</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Generic aRFC for ZCL_ASYNC_FRAMEWORK</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>PROCESS_OBJECT_SERIALIZED</PARAMETER>
+       <TYP>XML_STRNG</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>CALLBACK_OBJECT_SERIALIZED</PARAMETER>
+       <TYP>XML_STRNG</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ERROR_OBJECT_SERIALIZED</PARAMETER>
+       <TYP>XML_STRNG</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>PROCESS_OBJECT_SERIALIZED</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CALLBACK_OBJECT_SERIALIZED</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERROR_OBJECT_SERIALIZED</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
