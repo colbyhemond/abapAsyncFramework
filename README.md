@@ -64,9 +64,11 @@ To start an asynchronous process without dealing with a callback is as simple as
 
 `zcl_async_framework=>async( lo_your_async_object ).`
 
+```abap
 DATA(lo\_update\_table\_async) = NEW lcl\_update\_table\_async( ).
 
 zcl\_async\_framework=>async( lo\_update\_table\_async ).
+```
 
 ### Using Objects within the Asynchronous Framework
 
