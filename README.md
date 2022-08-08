@@ -171,16 +171,3 @@ CATCH zcx_async_error INTO DATA(lx_async_error).
 	WRITE: / lx_async_error->get_task( ).
 ENDTRY.
 ```
-
-## Additional Notes
-
-Future Ideas/Considerations:
-
-* Logger
-** What would it log
-* Message Channels
-** Webhook For Slack messages
-**   Email for Email messages
-* Performance
-** Number of times called
-** Length of runtime
