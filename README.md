@@ -102,7 +102,7 @@ CLASS lcl_update_table_async DEFINITION.
 	PROTECTED SECTION.
 	PRIVATE SECTION.
 		CLASS-DATA:
-			lt\_totals TYPE STANDARD TABLE OF ty\_structure.
+			lt_totals TYPE STANDARD TABLE OF ty_structure.
 ENDCLASS.
 ```
 
@@ -136,8 +136,7 @@ The await method forces a `WAIT` statement, which is SAP's trigger to pause the 
 ```abap
 DATA(lo_update_table_async) = NEW lcl_update_table_async( ).
 
-lo_update_table_async ?= zcl_async_framework=>async( lo\_update\_table\_async
-										   )->await( ).
+lo_update_table_async ?= zcl_async_framework=>async( lo_update_table_async )->await( ).
 
 DATA(lt_data_from_callback) = lo_update_table_async->get_data( ).
 ```
